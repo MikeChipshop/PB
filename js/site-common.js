@@ -65,4 +65,9 @@ jQuery( document ).ready(function( $ ) {
 	  $( ".pb_article-showcase" ).slideToggle( "fast", function() {});
 	  $( ".pe_showcase-toggle button" ).toggleClass( "hidden", function() {});
 	});
+	
+	// Toggle "Search Bar"
+	$( ".pb_header-global-search i" ).click(function() {
+	  $( "body" ).toggleClass( "pb_search-open", function() {});
+	});
 });
