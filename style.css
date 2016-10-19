@@ -222,6 +222,53 @@ body {
 .pb_cart-nav a:hover {
 	color:#fd6116;	
 }
+.pb_header-global-search {
+	color: #fff;
+	background-color: transparent;
+	position:relative;
+}
+.pb_header-global-search:hover,
+ .pb_search-open .pb_header-global-search {
+	background-color: #fd6116;	
+}
+.pb_header-global-search i {
+    font-size: 20px;
+    padding: 13px;	
+	cursor:pointer;
+}
+.pb_search-options {
+	position: absolute;
+    background-color: #fd6116;
+    z-index: 999;
+    right: 0px;
+    padding: 10px;	
+	z-index:99999999;
+	visibility:hidden;
+}
+.pb_search-open .pb_search-options {
+	visibility:visible;	
+}
+.pb_search-options input[type=search]{
+	border: none;
+    padding: 5px 10px;
+    width: 240px;	
+}
+.pb_search-options button {
+	cursor:pointer;	
+	background-color: #303030;
+    border: none;
+    width: 100%;
+    padding: 4px;
+    color: #fff;
+}
+.pb_search-checkbox-wrap {
+	display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0px;	
+}
+.pb_search-checkbox-wrap label {
+	flex-basis: 50%;	
+}
 /* ------------------------------------------------
  Banner
 ------------------------------------------------ */
@@ -594,7 +641,7 @@ body {
 	max-width:850px;
 	text-align:center;
 	width:100%;
-	z-index: 9999999999999;
+	z-index: 9999;
     position: relative;
 	padding:40px 20px;
 }
