@@ -34,11 +34,27 @@
         <ul class="pb_main-nav clearfix">
             <?php wp_nav_menu( array('theme_location' => 'main_menu' )); ?>
         </ul>
-        <div class="pb_cart-nav">
+        <!-- <div class="pb_cart-nav">
         	<a href="<?php echo WC()->cart->get_cart_url(); ?>" title="View your basket">
 				<?php echo sprintf (_n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
             	<i class="fa fa-shopping-basket"></i>
             </a>
+        </div> -->
+        <div class="pb_header-global-search">
+        	<i class="fa fa-search" aria-hidden="true"></i>
+            <div class="pb_search-options">
+            	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+                    <input type="search" value="Site search..." name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+					<div class="pb_search-checkbox-wrap">
+                    	<label><input type="checkbox" name="" value="articles" />Articles</label>
+                        <label><input type="checkbox" name="" value="articles" />Articles</label>
+                        <label><input type="checkbox" name="" value="articles" />Articles</label>
+                        <label><input type="checkbox" name="" value="articles" />Articles</label>
+                        <label><input type="checkbox" name="" value="articles" />Articles</label>
+                    </div>
+                    <button id="searchsubmit">Search <span class="fa fa-search" aria-hidden="true"></span></button>
+                </form>
+            </div>
         </div>
     </div>
 </nav>
