@@ -421,3 +421,13 @@ function royal_woocommerce_maintenance($content) {
    }
    return $content;
 }
+
+// Custom category page loop
+function custom_cpl( $query ) {
+    if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+		$post_types = get_post_types();
+        $query->set( 'post_type', $post_types );
+		return $query;
+	}
+}
+add_action( 'pre_get_posts', 'custom_cpl' );
