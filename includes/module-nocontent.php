@@ -1,7 +1,7 @@
 <div class="pb_no-content">
-                	<h1>No content found</h1>
+                	<h1><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> No content found</h1>
                 	<div class="pb_no-content-suggest">
-						<p>...but you might be interested in...</p>
+						<p>but you might be interested in...</p>
 						<?php $suggestloop = new WP_Query( array( 'post_type' => 'any', 'posts_per_page' => '4') ); ?>
         				<?php if ( $suggestloop->have_posts() ) {?>
             				<ul class="pb_index-list clearfix">
