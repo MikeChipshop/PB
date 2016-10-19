@@ -1198,6 +1198,18 @@ p.logged-in-as a {
 }
 
 /* ------------------------------------------------
+ 404 Page
+------------------------------------------------ */
+
+.error404 .pb_main-nav-cont > .pb_default-wrap {
+	background-color:#fff;
+}
+.error404 .pb_no-content {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+/* ------------------------------------------------
  RTE Styles
 ------------------------------------------------ */
 .rte {
