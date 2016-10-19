@@ -8,7 +8,13 @@
 								<?php while ( $suggestloop->have_posts() ) : $suggestloop->the_post(); ?>
 									<li id="pb_post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
                         	<div class="pb_index-img">
-                            	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'featured-thumb' ); ?><time><?php echo '' . human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';?></time></a>
+                            	<a href="<?php the_permalink(); ?>">
+                                <div class="pb_img-overflow">
+								<?php the_post_thumbnail( 'featured-thumb' ); ?>
+                                </div>
+                                <time><?php echo '' . human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';?>
+                                </time>
+                                </a>
                             </div>
                             <div class="pb_index-excerpt">
                         		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
