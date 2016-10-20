@@ -1326,6 +1326,34 @@ div.wpcf7-mail-sent-ok {
 }
 
 /* ------------------------------------------------
+ FAQ Module
+------------------------------------------------ */
+
+.pb_faq-module {
+	padding-top: 40px;
+    border-top: 1px solid #ccc;
+}
+.pb_faq-module dd {
+	padding-bottom:20px;	
+}
+.pb_faq-module h3 {
+	font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+	line-height: 135%;	
+}
+.pb_faq-answer.rte p {
+	max-width:100%;
+	padding:0px 0px 10px 0px;	
+}
+.pb_faq-answer.rte p:last-child {
+	padding-top:0px;	
+}
+.pb_faq-answer.rte p:first-child {
+    padding: 0px 0px 10px 0px;
+}
+
+/* ------------------------------------------------
  No Content
 ------------------------------------------------ */
 

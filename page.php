@@ -22,6 +22,18 @@
                                             </div>
                                         <?php endif; ?>
                                     <?php endwhile; endif; ?>
+                                    <?php if(is_page('faqs')): ?>
+                                    	<?php if( have_rows('faqs') ): ?>
+											<div class="pb_faq-module">
+                                            	<dl>
+													<?php while ( have_rows('faqs') ) : the_row(); ?>
+                                                    	<dt><h3><?php the_sub_field('faq_question'); ?></h3></dt>
+                                                        <dd class="pb_faq-answer rte"><?php the_sub_field('faq_answer'); ?></dd>
+                                                    <?php endwhile;  ?>
+                                                </dl>
+											</div>
+										<?php endif; ?>
+                                    <?php endif; ?>
                                 </div>
                     	</article>
                     <?php endwhile; ?>
