@@ -3,7 +3,7 @@
     	<main class="pb_main">
         	<?php if ( have_posts() ) {?>
 					<?php while ( have_posts() ) : the_post(); ?>
-                        <article id="pb_single-post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+                        <article id="pb_single-post-<?php the_ID(); ?>" <?php post_class('pb_content-page clearfix'); ?>>
                         		<h3 class="pb_single-page-title"><?php the_title(); ?></h3>
                             	<div class="pb_single-page-cont rte"><?php the_content(); ?></div>
                     	</article>

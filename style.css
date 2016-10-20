@@ -1234,6 +1234,17 @@ p.logged-in-as a {
 }
 
 /* ------------------------------------------------
+ Content Pages
+------------------------------------------------ */
+
+.pb_content-page .pb_single-page-title {
+	font-size: 40px;
+    margin-bottom: 0px;
+    padding: 40px 0px;
+    text-align: center;	
+}
+
+/* ------------------------------------------------
  No Content
 ------------------------------------------------ */
 
