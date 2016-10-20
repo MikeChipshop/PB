@@ -1268,6 +1268,64 @@ p.logged-in-as a {
 }
 
 /* ------------------------------------------------
+ Contact Forms
+------------------------------------------------ */
+
+.rte .pb_contact-forms ul,
+.pb_contact-forms ul {
+	list-style-type:none;	
+	margin:0px;
+}
+.rte .pb_contact-forms li,
+.pb_contact-forms li {
+	padding-left:0px;
+	padding-bottom: 6px;
+}
+.pb_contact-forms input,
+.pb_contact-forms textarea {
+	padding:5px 10px;
+	width:100%;	
+	border: 1px solid #b5b5b5;
+	display:block;
+}
+.pb_contact-forms input[type=submit] {
+	cursor: pointer;
+    border: 1px solid #32c1eb;
+    background-color: #32c1eb;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;	
+}
+.wpcf7-validates-as-required {
+	border-left: 4px solid #32c1eb!important;	
+}
+.pb_contact-forms input.wpcf7-not-valid,
+.pb_contact-forms textarea.wpcf7-not-valid {
+	border-left: 4px solid #fd6116!important;
+	border-bottom:none;
+}
+span.wpcf7-not-valid-tip {
+    color: #fff;
+    display: block;
+    background-color: #fd6116;
+    padding-left: 4px;
+    font-size: 14px;
+}
+div.wpcf7-response-output {
+	margin: 0px;
+    color: #fff;
+    text-align: center;	
+}
+div.wpcf7-validation-errors {
+    border: 2px solid #fd6116;
+    background-color: #fd6116;
+}
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #32c1eb;
+    background-color: #32c1eb;
+}
+
+/* ------------------------------------------------
  No Content
 ------------------------------------------------ */
 
