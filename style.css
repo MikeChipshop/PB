@@ -1244,6 +1244,29 @@ p.logged-in-as a {
     text-align: center;	
 }
 
+/* One Column Layout */
+
+.pb_one-col-layout {
+	padding-bottom:40px;	
+}
+/* Two Column Layout */
+
+.pb_two-col-layout {
+	padding-bottom:40px;	
+}
+.pb_two-col-layout {
+	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+}
+.pb_two-col-one {
+	padding-right:20px;	
+}
+.pb_two-col-two {
+	padding-left:20px;	
+}
+
 /* ------------------------------------------------
  No Content
 ------------------------------------------------ */
@@ -1592,6 +1615,19 @@ p.logged-in-as a {
 	.pb_home-further-pos section:nth-of-type(2),
 	.pb_home-further-pos section:nth-of-type(3){
     	padding-top: 40px;
+	}
+	
+	/* Two Column Layout */
+
+	.pb_two-col-layout {
+		display: block
+	}
+	.pb_two-col-one {
+		padding-right:0px;	
+		padding-bottom:20px;
+	}
+	.pb_two-col-two {
+		padding-left:0px;	
 	}
 	/* Footer */
 	.pb_footer-left {
