@@ -48,13 +48,6 @@
                     </a>
                 </li>
             </ul>
-            <h2>Contacting PhotoBite</h2>
-            <div class="pb_footer-newsletter">
-            	<form>
-            		<input type="text" value="Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-					<button id="searchsubmit">Go</button>
-				</form>
-       		</div>
 		</section>
     </div>
 </footer>
