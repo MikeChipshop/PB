@@ -427,3 +427,16 @@ function pb_change_post_label() {
     $menu[5][0] = 'Blog';
 }
 add_action( 'admin_menu', 'pb_change_post_label' );
+
+// Move Yoast to bottom
+function yoasttobottom() {
+	return 'low';
+}
+
+add_filter( 'wpseo_metabox_prio', 'yoasttobottom');
+
+add_action( 'add_meta_boxes', 'your_custom_add_custom_box' );
+
+	function your_custom_add_custom_box() {
+		add_meta_box('ps_custom_post_type_uploads', __('Portfolio Slideshow', 'port_slide'), 'ps_custom_post_type_uploads', 'clubs', 'normal', 'default');
+	}
