@@ -70,4 +70,16 @@ jQuery( document ).ready(function( $ ) {
 	$( ".pb_header-global-search i" ).click(function() {
 	  $( "body" ).toggleClass( "pb_search-open", function() {});
 	});
+	// Signup Footer
+	$(function() {
+		if (localStorage.getItem('showSignup') !== 1) {
+			$('body').removeClass('pb_footer-signup-relative');
+		}
+	});
+	$(document).ready(function() {
+		$('.pb_global-signup-close').click(function() {
+			$('body').addClass('pb_footer-signup-relative');
+			localStorage.setItem('showSignup', 1);
+	 	});
+	});
 });

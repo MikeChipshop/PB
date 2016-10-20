@@ -1569,7 +1569,53 @@ div.wpcf7-mail-sent-ok {
 	background-color:#fd6116;
 	color:#fff;
 }
+/* Global Signup */
 
+.pb_global-signup {
+	padding: 10px 0px;
+    color: #fff;
+    background-color: #fd6116;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+	line-height: 130%;
+}
+.pb_footer-signup-relative .pb_global-signup {
+	position:relative;
+}
+.pb_global-signup .pb_wrap {
+	padding:0px 60px;	
+}
+.pb_global-signup form {
+	padding-top:10px;	
+}
+.pb_global-signup input[type=email] {
+	border: none;
+    padding: 5px 10px;	
+}
+.pb_global-signup input[type=submit] {
+	padding: 5px 10px;
+    border: none;
+    color: #f3f3f3;
+    background-color: #303030;	
+	
+}
+.pb_global-signup-close {
+	border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-top: -13px;	
+}
+.pb_global-signup-close .fa-stack {
+	font-size:12px;		
+}
+.pb_footer-signup-relative .pb_global-signup-close {
+	display:none;	
+}
 
 @media only screen and (max-width : 1120px) {
 	.pb_main-header .pb_default-wrap {

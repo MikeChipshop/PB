@@ -58,6 +58,20 @@
 		</section>
     </div>
 </footer>
+<div class="pb_global-signup">
+	<div class="pb_wrap">
+    	<?php the_field('footer_signup_text','option'); ?>
+        <form>
+        	<input type="email" placeholder="Email"><input type="submit" value="Go">
+        </form>
+    </div>
+    <button class="pb_global-signup-close">
+    	<span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+        </span>
+    </button>
+</div>
 <div class="pb_mobile-menu-overlay"></div>
 <?php wp_footer(); ?>
 </body>
