@@ -4,6 +4,16 @@
 <meta charset="<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="initial-scale=1">
 <title><?php wp_title(''); ?><?php if(wp_title(' ', false)) { echo ' | '; } ?><?php bloginfo('name'); ?></title>
+<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/manifest.json">
+<link rel="mask-icon" href="<?php bloginfo('stylesheet_directory'); ?>/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="PhotoBite">
+<meta name="application-name" content="PhotoBite">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="<?php bloginfo('stylesheet_directory'); ?>/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <?php if(get_field('store_toggle','option') ){ ?>
 	<style>
 		.pb_shop-toggle-item {
