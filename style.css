@@ -1647,6 +1647,25 @@ div.wpcf7-mail-sent-ok {
 	.pb_main-footer .pb_footer-right h2 {
 		margin:0px 0px 20px 0px;	
 	}
+	
+	/* Archive Pages */
+	.pb_index-post-meta .pb_index-category a {
+		margin-bottom:5px;	
+	}
+	.pb_index-options nav {
+		text-align:center;	
+	}
+	.pb_index-list li {
+		display: block;	
+	}
+	.pb_index-img {
+		max-width:300px;
+		margin:0px auto 20px auto;	
+	}
+	.pb_index-excerpt {
+		text-align:center;	
+		padding-left:0px;
+	}
 }
 
 @media only screen and (max-width : 700px) {
