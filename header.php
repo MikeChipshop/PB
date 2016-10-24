@@ -41,6 +41,7 @@
 </div>
 <nav class="pb_main-nav-cont">
 	<div class="pb_nav-wrap">
+    	<button class="pb_mobile-nav-close"><i class="fa fa-times" aria-hidden="true"></i></button>
         <ul class="pb_main-nav clearfix">
             <?php wp_nav_menu( array('theme_location' => 'main_menu' )); ?>
         </ul>

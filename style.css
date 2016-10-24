@@ -163,6 +163,9 @@ body {
   	display: -webkit-flex;
   	display: flex; 
 }
+.pb_mobile-nav-close {
+	display:none;	
+}
 .pb_main-nav,
 .pb_cart-nav {
 	flex-grow:1;
@@ -1701,6 +1704,17 @@ div.wpcf7-mail-sent-ok {
     	-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);
     	-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);
     	box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);	
+	}
+	.pb_mobile-nav-close {
+		display:block;	
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		font-size: 30px;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		cursor: pointer;
 	}
 	.pb_main-nav li {
 		float:none;	

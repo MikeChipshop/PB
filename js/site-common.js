@@ -2,6 +2,9 @@ jQuery( document ).ready(function( $ ) {
 	$('.pb_mobile-menu-toggle').click(function() {
 		$('body').addClass('pb_mobile-menu-active');
 	});
+	$('.pb_mobile-nav-close').click(function() {
+		$('body').removeClass('pb_mobile-menu-active');
+	});
 	$('.pb_go-default').click(function() {
 		$('body').removeClass('pb_default-view');
 		$('body').addClass('pb_default-view');
