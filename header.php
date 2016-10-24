@@ -13,7 +13,7 @@
 <?php }; ?>
 <?php wp_head(); ?>
 </head>
-<body <?php body_class('pb_default-view'); ?>>
+<body <?php body_class('pb_default-view pb_footer-signup-relative'); ?>>
 <header class="pb_main-header">
 	<div class="pb_default-wrap">
     	<div class="pb_header-logo">

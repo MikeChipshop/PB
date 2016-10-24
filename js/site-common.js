@@ -38,7 +38,7 @@ jQuery( document ).ready(function( $ ) {
         	owl.removeClass('hide');
     	},
 		navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	})
+	});
 	
 	$('.pb_home-product-slider').owlCarousel({
 		loop:true,
@@ -48,7 +48,7 @@ jQuery( document ).ready(function( $ ) {
 		autoplay:false,
 		dots:true,
 		navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	})
+	});
 	
 	$('.pb_home-post-slider').owlCarousel({
 		loop:true,
@@ -58,7 +58,7 @@ jQuery( document ).ready(function( $ ) {
 		autoplay:false,
 		dots:true,
 		navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-	})
+	});
 	
 	// Toggle "Best In"
 	$( ".pe_showcase-toggle button" ).click(function() {
@@ -71,15 +71,16 @@ jQuery( document ).ready(function( $ ) {
 	  $( "body" ).toggleClass( "pb_search-open", function() {});
 	});
 	// Signup Footer
+		
 	$(function() {
-		if (localStorage.getItem('showSignup') !== 1) {
-			$('body').removeClass('pb_footer-signup-relative');
+		if (localStorage.getItem("showSignup") !==  "false") {
+			$("body").removeClass("pb_footer-signup-relative");
 		}
-	});
-	$(document).ready(function() {
-		$('.pb_global-signup-close').click(function() {
-			$('body').addClass('pb_footer-signup-relative');
-			localStorage.setItem('showSignup', 1);
+		if (localStorage.getItem("showSignup") ===  "false") {
+		}
+		$(".pb_global-signup-close").click(function() {
+			$("body").addClass("pb_footer-signup-relative");
+			localStorage.setItem("showSignup", "false");
 	 	});
 	});
 });
