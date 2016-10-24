@@ -1698,6 +1698,9 @@ div.wpcf7-mail-sent-ok {
 	.pb_header-user {
 		display:none;	
 	}
+	body.pb_mobile-menu-active {
+		overflow:hidden;	
+	}
 	.pb_mobile-nav-bar {
 		display:block;
 		background-color: #40c5ec;
