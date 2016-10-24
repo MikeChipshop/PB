@@ -1683,6 +1683,8 @@ div.wpcf7-mail-sent-ok {
     	-moz-transition: all 0.4s ease;
     	-o-transition: all 0.4s ease;
     	transition: all 0.4s ease;
+		padding-right:0px;
+		overflow-y: scroll;
 	}
 	.pb_mobile-menu-active .pb_main-nav-cont {
 		left:0px;		
@@ -1733,6 +1735,26 @@ div.wpcf7-mail-sent-ok {
 		width:100%;
 		height:100%;
 		opacity:.8;	
+	}
+	.pb_nav-wrap {
+		display:block;	
+	}
+	.pb_main-nav .current_page_item a:after, 
+	.pb_main-nav .current-menu-item a:after, 
+	.pb_main-nav .current-page-ancestor a:after, 
+	.pb_main-nav .current_page_parent a:after {
+		display:none;	
+	}
+	.pb_header-global-search i {
+		display:none;	
+	}
+	.pb_search-options {
+		visibility:visible;	
+		position: relative;
+    	background-color: #40c5ec;
+	}
+	.pb_search-options input[type=search] {
+		width:100%;	
 	}
 	
 	/* Home Page */
