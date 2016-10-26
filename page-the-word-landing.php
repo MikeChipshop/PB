@@ -45,7 +45,6 @@
                                 <div class="pb_img-overflow">
 								<?php the_post_thumbnail( 'featured-thumb' ); ?>
                                 </div>
-                                <time><?php echo '' . human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';?></time>
                                 </a>
                             </div>
                             <div class="pb_index-excerpt">
