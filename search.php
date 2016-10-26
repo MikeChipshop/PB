@@ -27,6 +27,27 @@
 								<?php the_post_thumbnail( 'featured-thumb' ); ?>
                                 </div>
                                 </a>
+                                <?php
+									$post_type = $_GET['post_type'];
+									if (isset( $post_type )) {
+									} else {
+								?>
+									<span class="pb_post-type">
+										<?php
+											$type = get_post_type();
+											if ( 'post' == $type )
+											echo 'Blog';
+											elseif ( 'page' == $type )
+											echo 'Page';
+											elseif ( 'competitions' == $type )
+											echo 'Win Stuff';
+											elseif ( 'reviews' == $type )
+											echo 'The Measure';
+											elseif ( 'news' == $type )
+											echo 'The Word';
+										?>
+									</span>
+                           		<?php }; ?>
                             </div>
                             <div class="pb_index-excerpt">
                         		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
