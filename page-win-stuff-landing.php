@@ -46,6 +46,14 @@
 								<?php the_post_thumbnail( 'featured-thumb' ); ?>
                                 </div>
                                 </a>
+                                
+									<?php if(get_field('competition_status') == 'open'){?>		
+                                         <span class="pb_post-type">Enter Now!</span> 
+                                    <?php } elseif(get_field('competition_status') == 'closed'){ ?>
+                                    	<span class="pb_post-type" style="background-color:#f00;">Closed</span>
+                                    <?php } elseif(get_field('competition_status') == 'ending'){ ?>
+                                    	<span class="pb_post-type">Ending Soon!</span>
+                                    <?php }; ?>
                             </div>
                             <div class="pb_index-excerpt">
                         		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
