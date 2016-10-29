@@ -30,8 +30,23 @@
 		<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/photobite-logo.png" alt="Photobite Logo"></a>
         </div>
         <div class="pb_header-user">
-        	<div class="pb_header-user-text">Welcome back Mike<span><a href="#">Profile</a> - <a href="#">Log Out</a></span></div>
-            <div class="pb_header-user-img"><a href="#"><?php global $userdata; get_currentuserinfo(); echo get_avatar( $userdata->ID, 40 ); ?></a></div>
+        	<?php if ( is_user_logged_in()): ?>
+            	<?php //global $userdata; get_currentuserinfo(); ?>
+        		<div class="pb_header-user-text">
+                	Welcome back <?php //echo $userdata->user_firstname; ?>
+                	<span><a href="#">Profile</a> - <a href="#">Log Out</a></span>
+                </div>
+            	<div class="pb_header-user-img">
+                	<a href="#"><?php echo get_avatar( $userdata->ID, 40 ); ?></a>
+                </div>
+            <?php else: ?>
+            	<div class="pb_header-user-text">
+                	Welcome to PhotoBite 
+                	<span><a href="#">Sign In</a> - <a href="<?php bloginfo('url'); ?>/wp-register.php">Register</a></span>
+                </div>
+            	<div class="pb_header-user-img">
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </header>
