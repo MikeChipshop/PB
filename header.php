@@ -31,10 +31,10 @@
         </div>
         <div class="pb_header-user">
         	<?php if ( is_user_logged_in()): ?>
-            	<?php //global $userdata; get_currentuserinfo(); ?>
+            	<?php global $userdata; get_currentuserinfo(); ?>
         		<div class="pb_header-user-text">
-                	Welcome back <?php //echo $userdata->user_firstname; ?>
-                	<span><a href="#">Profile</a> - <a href="#">Log Out</a></span>
+                	Welcome back <?php echo $userdata->user_firstname; ?>
+                	<span><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>">Profile</a> - <a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></span>
                 </div>
             	<div class="pb_header-user-img">
                 	<a href="#"><?php echo get_avatar( $userdata->ID, 40 ); ?></a>
@@ -42,7 +42,7 @@
             <?php else: ?>
             	<div class="pb_header-user-text">
                 	Welcome to PhotoBite 
-                	<span><a href="#">Sign In</a> - <a href="<?php bloginfo('url'); ?>/wp-register.php">Register</a></span>
+                	<span><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><?php _e('Login / Register','woothemes'); ?></a></span>
                 </div>
             	<div class="pb_header-user-img">
                 </div>
