@@ -1559,18 +1559,18 @@ div.wpcf7-mail-sent-ok {
 	padding:5px;
 	border:none;
 }
-.pb_footer-newsletter button {
-	padding:5px;
-	border:none;
-	cursor:pointer;
-	-webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+#mc_embed_signup .button {
+	padding:5px!important;
+	border:none!important;
+	cursor:pointer!important;
+	-webkit-transition: all 0.4s ease!important;
+    -moz-transition: all 0.4s ease!important;
+    -o-transition: all 0.4s ease!important;
+    transition: all 0.4s ease!important;
 }
-.pb_footer-newsletter button:hover {
-	background-color:#fd6116;
-	color:#fff;
+#mc_embed_signup .button:hover {
+	background-color:#fd6116!important;
+	color:#fff!important;
 }
 /* Global Signup */
 
@@ -1587,12 +1587,28 @@ div.wpcf7-mail-sent-ok {
 .pb_footer-signup-relative .pb_global-signup {
 	position:relative;
 }
+.pb_footer-signup-cont {
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex; 
+	-webkit-justify-content: center; 
+	justify-content: center;	
+}
+.mc-field-group {
+	position:relative;	
+}
+.pb_footer-signup-cont > div {
+	padding-right:20px;	
+}
 .pb_global-signup .pb_wrap {
 	padding:0px 60px;	
 }
 .pb_global-signup form {
 	padding-top:10px;	
 }
+.pb_global-signup input[type=text], 
 .pb_global-signup input[type=email] {
 	border: none;
     padding: 5px 10px;	
@@ -1602,7 +1618,17 @@ div.wpcf7-mail-sent-ok {
     border: none;
     color: #f3f3f3;
     background-color: #303030;	
-	
+}
+#mc_embed_signup div.mce_inline_error {
+    background-color: #32c1eb!important;
+    font-weight: normal!important;
+    position: absolute!important;
+    margin: 0px 0px 0px 0px!important;
+    bottom: 26px!important;
+    left: 43px!important;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.56);
 }
 .pb_global-signup-close {
 	border: none;
@@ -1619,7 +1645,13 @@ div.wpcf7-mail-sent-ok {
 .pb_footer-signup-relative .pb_global-signup-close {
 	display:none;	
 }
-
+#mce-responses {
+	padding-top: 10px;
+}
+#mce-responses a {
+	color:#fff;
+	text-decoration:underline;	
+}
 @media only screen and (max-width : 1120px) {
 	.pb_main-header .pb_default-wrap {
 		padding:20px;	
