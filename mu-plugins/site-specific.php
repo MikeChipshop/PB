@@ -440,3 +440,8 @@ add_action( 'add_meta_boxes', 'your_custom_add_custom_box' );
 	function your_custom_add_custom_box() {
 		add_meta_box('ps_custom_post_type_uploads', __('Portfolio Slideshow', 'port_slide'), 'ps_custom_post_type_uploads', 'clubs', 'normal', 'default');
 	}
+	
+	add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
