@@ -71,13 +71,13 @@
             <div class="pb_search-options">
             	<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
                     <input type="search" value="Site search..." name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-					<div class="pb_search-checkbox-wrap">
+					<!-- <div class="pb_search-checkbox-wrap">
                     	<label><input type="checkbox" name="" value="articles" />Articles</label>
                         <label><input type="checkbox" name="" value="articles" />Articles</label>
                         <label><input type="checkbox" name="" value="articles" />Articles</label>
                         <label><input type="checkbox" name="" value="articles" />Articles</label>
                         <label><input type="checkbox" name="" value="articles" />Articles</label>
-                    </div>
+                    </div> -->
                     <button id="searchsubmit">Search <span class="fa fa-search" aria-hidden="true"></span></button>
                 </form>
             </div>
