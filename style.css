@@ -1509,6 +1509,31 @@ div.wpcf7-mail-sent-ok {
 	padding: 10px;
     font-size: 14px;
 }
+
+/* ------------------------------------------------
+ Shop - Global
+------------------------------------------------ */
+
+.post-type-archive-product > .pb_default-wrap,
+.tax-product_cat > .pb_default-wrap,
+.single-product > .pb_default-wrap {
+	background-color: #f3f3f3;
+}
+.woocommerce .woocommerce-breadcrumb {
+	padding:20px 0px;	
+}
+.woocommerce .woocommerce-breadcrumb a {
+	color: #fff;
+    background-color: #fd6116;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;	
+}
+
+/* ------------------------------------------------
+ Shop - Product Archives
+------------------------------------------------ */
+
 /* ------------------------------------------------
  Footer
 ------------------------------------------------ */
