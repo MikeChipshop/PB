@@ -50,9 +50,9 @@
 									<?php if(get_field('competition_status') == 'open'){?>		
                                          <span class="pb_post-type">Enter Now!</span> 
                                     <?php } elseif(get_field('competition_status') == 'closed'){ ?>
-                                    	<span class="pb_post-type" style="background-color:#f00;">Closed</span>
+                                    	<span class="pb_post-type pb_comp-closed">Closed</span>
                                     <?php } elseif(get_field('competition_status') == 'ending'){ ?>
-                                    	<span class="pb_post-type">Ending Soon!</span>
+                                    	<span class="pb_post-type pb_comp-ending">Ending Soon!</span>
                                     <?php }; ?>
                             </div>
                             <div class="pb_index-excerpt">

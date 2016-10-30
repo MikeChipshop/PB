@@ -1329,6 +1329,27 @@ div.wpcf7-mail-sent-ok {
 }
 
 /* ------------------------------------------------
+ Competitions
+------------------------------------------------ */
+
+.pb_single-comp-status {
+	width: 100%;
+    max-width: 1064px;
+    margin: 0 auto;
+    background-color: #32c1eb;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;	
+}
+.pb_comp-closed {
+	background-color: #fd1616;
+}
+.pb_comp-ending {
+	background-color: #fd6116;
+}
+
+/* ------------------------------------------------
  FAQ Module
 ------------------------------------------------ */
 

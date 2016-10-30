@@ -34,6 +34,15 @@
                     </div>
                 <?php }; ?>
             <?php }; ?>
+            <?php if ( is_singular( 'competitions' )) { ?>
+            	<?php if(get_field('competition_status') == 'open'){?>		
+                <div class="pb_single-comp-status pb_comp-enter">Enter Now!</div> 
+                <?php } elseif(get_field('competition_status') == 'closed'){ ?>
+                <div class="pb_single-comp-status pb_comp-closed">Closed</div>
+                <?php } elseif(get_field('competition_status') == 'ending'){ ?>
+                <div class="pb_single-comp-status pb_comp-ending">Ending Soon!</div>
+                <?php }; ?>
+            <?php }; ?>
             <div class="pb_single-page-cont rte">
             	<?php the_content(); ?>
             </div>
