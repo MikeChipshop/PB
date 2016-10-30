@@ -1883,6 +1883,16 @@ div.wpcf7-mail-sent-ok {
 		border:none;
 		margin:0px;	
 	}
+	.pb_footer-signup-cont {
+		display:block;	
+	}
+	.mc-field-group {
+    	margin-bottom: 5px;
+	}
+	.mc-field-group label {
+    	display: inline-block;
+    	width: 60px;
+	}
 }
 @media only screen and (max-width : 500px) {
 	.pb_home-slider-cont h2 {
@@ -1904,3 +1914,4 @@ div.wpcf7-mail-sent-ok {
 	.pb_mobile-menu-active .pb_main-nav-cont {
 		left:0px;		
 	}
+}
