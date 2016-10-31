@@ -1645,6 +1645,7 @@ div.wpcf7-mail-sent-ok {
     width: 100%;
     bottom: 0px;
 	line-height: 130%;
+	z-index: 999999999;
 }
 .pb_footer-signup-relative .pb_global-signup {
 	position:relative;
