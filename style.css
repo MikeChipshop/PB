@@ -1527,7 +1527,8 @@ div.wpcf7-mail-sent-ok {
 
 .post-type-archive-product > .pb_default-wrap,
 .tax-product_cat > .pb_default-wrap,
-.single-product > .pb_default-wrap {
+.single-product > .pb_default-wrap,
+.woocommerce-page > .pb_default-wrap {
 	background-color: #f3f3f3;
 }
 .woocommerce .woocommerce-breadcrumb {
@@ -1566,7 +1567,21 @@ div.wpcf7-mail-sent-ok {
 	background-color: #32c1eb;
 	color:#fff;
 }
-
+.woocommerce a {
+	color:#32c1eb;	
+}
+li.woocommerce-MyAccount-navigation-link a {
+	color: #353535;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;	
+	width:100%;
+}
+li.woocommerce-MyAccount-navigation-link.is-active a,
+li.woocommerce-MyAccount-navigation-link a:hover {
+	color: #ffffff;
+    background-color: #fd6116;	
+}
 /* ------------------------------------------------
  Shop - Product Archives
 ------------------------------------------------ */
