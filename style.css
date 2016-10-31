@@ -194,13 +194,19 @@ body {
 .pb_main-nav .current_page_item a,
 .pb_main-nav .current-menu-item a,
 .pb_main-nav .current-page-ancestor a,
-.pb_main-nav .current_page_parent a {
+.pb_main-nav .current_page_parent a,
+.single-reviews .pb_main-nav .menu-item-389 a, 
+.single-news .pb_main-nav .menu-item-383 a,
+.single-competitions .pb_main-nav .menu-item-580 a {
 	background-color:#fd6116;	
 }
 .pb_main-nav .current_page_item a:after,
 .pb_main-nav .current-menu-item a:after,
 .pb_main-nav .current-page-ancestor a:after,
-.pb_main-nav .current_page_parent a:after {
+.pb_main-nav .current_page_parent a:after,
+.single-reviews .pb_main-nav .menu-item-389 a:after,
+.single-news .pb_main-nav .menu-item-383 a:after,
+.single-competitions .pb_main-nav .menu-item-580 a:after {
 	content:"";
 	position:absolute;
 	bottom:-8px;
@@ -212,7 +218,6 @@ body {
     width:0;
 	margin-left: -5px;
 }
-
 .pb_cart-nav {
 	text-align:right;
 	padding-top: 14px;
