@@ -368,7 +368,10 @@ body {
 }
 .pb_home-slider-cont a {
 	color:#fff;
-	text-decoration:none;	
+	text-decoration:none;
+	display: block;
+    height: 100%;
+    width: 100%;	
 }
 .pb_home-slider-cont .pb_topleft {
 	top:20px;
