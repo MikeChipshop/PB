@@ -1417,6 +1417,7 @@ div.wpcf7-mail-sent-ok {
 }
 .rte img {
 	max-width:100%;	
+	height:auto;
 }
 .rte p {
 	margin:0px auto;
