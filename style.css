@@ -1547,6 +1547,25 @@ div.wpcf7-mail-sent-ok {
 .woocommerce .woocommerce-breadcrumb a:hover {
     background-color: #32c1eb;
 }
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button {
+	color: #ffffff;
+    background-color: #fd6116;
+	font-weight:normal;
+	-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;	
+}
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover {
+	background-color: #32c1eb;
+	color:#fff;
+}
 
 /* ------------------------------------------------
  Shop - Product Archives
