@@ -411,17 +411,6 @@ function filter_ptags_on_images($content){
 
 add_filter('the_content', 'filter_ptags_on_images');
 
-add_filter ('the_content', 'royal_woocommerce_maintenance');
-function royal_woocommerce_maintenance($content) {
-   if( is_woocommerce() or is_shop() or is_product_category() or is_product() or is_cart() or is_checkout() or is_account_page() ) {
-      $content.= '<div style="border:1px dotted #000; text-align:center; padding:10px;">';
-      $content.= '<h4>We will be back soon</h4>';
-      $content.= '<p>We are down for maintenance, please check back soon.</p>';
-      $content.= '</div>';
-   }
-   return $content;
-}
-
 // Custom category page loop
 function custom_cpl( $query ) {
     if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
