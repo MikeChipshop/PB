@@ -1957,6 +1957,14 @@ div.wpcf7-mail-sent-ok {
 	.pb_mobile-menu-active .pb_main-nav-cont {
 		left:0px;		
 	}
+	.pb_about-author {
+		display: block;
+    	text-align: center;	
+	}
+	.pb_about-author-img {
+    	float: none;
+    	margin: 0px auto 20px auto;
+	}
 }
 @media only screen and (max-width : 400px) {
 	.pb_main-nav-cont {
