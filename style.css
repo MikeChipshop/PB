@@ -291,12 +291,12 @@ body {
 	position:relative;	
 }
 .pb_home-slider-cont .owl-controls {
-	position:absolute;
-	top:0px;	
-	font-size:50px;
-	color:#fff;
-	width: 100%;
-	height: 100%;
+    position: absolute;
+    bottom: 0px;
+    font-size: 50px;
+    color: #fff;
+    width: 100%;
+    height: 40px;
 }
 .pb_home-slider-cont .owl-nav {
 	display: -webkit-box;
@@ -309,6 +309,7 @@ body {
     top: 50%;
     margin-top: -35px;
 	padding:10px;
+	display:none;
 }
 .pb_home-slider-cont .owl-next,
 .pb_home-slider-cont .owl-prev {
