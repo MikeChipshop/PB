@@ -958,14 +958,17 @@ body {
 }
 .pb_single-meta-left {
 	flex-basis:50%;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  	display: flex;
 }
 .pb_single-meta-right {
 	flex-basis:50%;
 	text-align:right;
 }
 .pb_single-post-meta-img {
-	width:40px;
-	display:inline-block;	
+	width:40px;	
 }
 .pb_single-post-meta-img img {
 	width: 40px;
@@ -973,8 +976,6 @@ body {
     border-radius: 50%;
 }
 .pb_single-post-meta-details {
-	display: inline-block;
-    vertical-align: top;
     padding-left: 20px;	
 }
 .pb_single-post-meta-details p:first-child {
@@ -1914,6 +1915,15 @@ div.wpcf7-mail-sent-ok {
 	.pb_two-col-two {
 		padding-left:0px;	
 	}
+	.pb_single-meta-right {
+    	text-align: center;
+    	padding-top: 10px;
+	}
+	/* Articles */
+	.pb_single-post-meta {
+		display:block;	
+	}
+	
 	/* Footer */
 	.pb_footer-left {
 		display:block;	
