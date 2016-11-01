@@ -12,42 +12,22 @@
                 <h2>Photobite Information</h2>
                 <ul><?php wp_nav_menu( array('theme_location' => 'info_menu' )); ?></ul>
             </section>
-            <section class="pb_footer-section">
-        	<h2>Contacting PhotoBite</h2>
-        	<ul class="pb_footer-social">
-            	<li>
-                    <a href="#">
-                    	<span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-facebook fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    	<span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-twitter fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    	<span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-instagram fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    	<span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-google-plus fa-stack-1x"></i>
-                        </span>
-                    </a>
-                </li>
-            </ul>
+            <section class="pb_footer-section">                 
+            <?php if( have_rows('social_links','option') ): ?>
+        		<h2>Find us at&hellip;</h2>       
+        		<ul class="pb_footer-social">
+					<?php while ( have_rows('social_links','option') ) : the_row(); ?>
+                        <li>
+                            <a href="<?php the_sub_field('network_link'); ?>" title="Find us on <?php the_sub_field('network_name'); ?>" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa <?php the_sub_field('network_icon'); ?> fa-stack-1x"></i>
+                                </span>
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
+            	</ul>
+            <?php endif; ?>
 		</section>
     </div>
 </footer>
