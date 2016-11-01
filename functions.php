@@ -357,7 +357,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
 if(function_exists('acf_add_options_page')) {
 
 	acf_add_options_page();
-	acf_add_options_sub_page('Sidebar');
+	//acf_add_options_sub_page('Sidebar');
 	acf_add_options_sub_page('Misc');
 
 }
