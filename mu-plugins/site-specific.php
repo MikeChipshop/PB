@@ -265,7 +265,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 			'main_menu' => 'Main Menu',
 			'footer_menu' => 'Footer Menu',
 			'info_menu' => 'Information Menu',
-			'footer_account_menu' => 'Footer Account Menu'
+			'footer_account_menu' => 'Footer Account Menu',
+			'footer_account_menu_logged_in' => 'Footer Account Menu Logged In'
   		)
   	);
 }

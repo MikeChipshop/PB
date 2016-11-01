@@ -6,7 +6,11 @@
             </section>
             <section class="pb_footer-section">
                 <h2>Your PhotoBite</h2>
-                <ul><?php wp_nav_menu( array('theme_location' => 'footer_account_menu' )); ?></ul>
+                <?php if ( is_user_logged_in()): ?>
+                	<ul><?php wp_nav_menu( array('theme_location' => 'footer_account_menu_logged_in' )); ?></ul>
+                <?php else: ?>
+                	<ul><?php wp_nav_menu( array('theme_location' => 'footer_account_menu' )); ?></ul>                	
+                <?php endif; ?>
             </section>
             <section class="pb_footer-section">
                 <h2>Photobite Information</h2>
