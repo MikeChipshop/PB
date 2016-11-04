@@ -1852,6 +1852,8 @@ li.woocommerce-MyAccount-navigation-link a:hover {
 	}
 	.pb_main-nav li {
 		float:none;	
+		margin-bottom:10px;
+		font-size:18px;
 	}
 	.pb_mobile-nav-bar button {
 		background-color: #fd6116;
