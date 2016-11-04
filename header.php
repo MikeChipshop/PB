@@ -31,7 +31,7 @@
         </div>
         <div class="pb_header-user">
         	<?php if ( is_user_logged_in()): ?>
-            	<?php global $userdata; get_currentuserinfo(); ?>
+            	<?php global $userdata; wp_get_current_user(); ?>
         		<div class="pb_header-user-text">
                 	Welcome back <?php echo $userdata->user_firstname; ?>
                 	<span><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>">Profile</a> - <a href="<?php echo wp_logout_url( get_permalink() ); ?>">Logout</a></span>
